@@ -3,7 +3,7 @@
 ---
 ## Database
 
-```mqsql
+```mysql
 
 CREATE DATABASE Delivery;
 
