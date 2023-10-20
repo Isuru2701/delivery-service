@@ -18,11 +18,14 @@ public class Delivery {
     @Column(name = "user_name")
     private int userName;
 
+    @Column(name = "product_id")
+    private int productId;
+
     @Column(name = "product_name")
-    private int productName;
+    private String productName;
 
     @Column(name = "product_type")
-    private int productType;
+    private String productType;
 
 
     @Column(name = "price")
@@ -32,7 +35,7 @@ public class Delivery {
     private float quantity;
 
     @Column(name = "address")
-    private float address;
+    private String address;
 
     @Column(name = "datetime")
     @Temporal(TemporalType.TIMESTAMP)
