@@ -21,13 +21,6 @@ public class Delivery {
     @Column(name = "product_id")
     private int productId;
 
-    @Column(name = "product_name")
-    private String productName;
-
-    @Column(name = "product_type")
-    private String productType;
-
-
     @Column(name = "price")
     private float price;
 
