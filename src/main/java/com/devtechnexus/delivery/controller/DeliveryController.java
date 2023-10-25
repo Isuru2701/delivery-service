@@ -38,4 +38,14 @@ public class DeliveryController {
     public void deleteDelivery(@PathVariable int id) {
         service.deleteDelivery(id);
     }
+
+    /**
+     *
+     * @param destination
+     * @return distance in km to the destination from the store
+     */
+    @GetMapping("/route")
+    public double getDistance(@RequestParam(name="destination") String destination) {
+        return service.getDistanceFromAPI(destination);
+    }
 }
