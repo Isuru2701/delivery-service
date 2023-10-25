@@ -1,9 +1,12 @@
 package com.devtechnexus.delivery.repository;
 
-import javax.annotation.Resource;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.devtechnexus.delivery.model.Delivery;
 
 @Repository
-public class DeliveryRepository extends JpaRepository <Delivery,Integer>
+public interface DeliveryRepository extends JpaRepository<Delivery,Integer>
 {
 
 }

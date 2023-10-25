@@ -1,10 +1,14 @@
 package com.devtechnexus.delivery.model;
 
+import jakarta.persistence.*;
+import lombok.Data;
+
+
 import java.sql.Timestamp;
 
 @Data
 @Entity
-@Table(name="delivery_table")
+@Table(name="delivery")
 
 public class Delivery {
 
