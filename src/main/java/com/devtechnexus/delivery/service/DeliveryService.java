@@ -98,8 +98,9 @@ public class DeliveryService {
                 JSONArray hitsArray = jsonObject.getJSONArray("hits");
                 if (hitsArray.length() > 0) {
                     JSONObject hit = hitsArray.getJSONObject(0);
-                    double lat = hit.getDouble("point_lat");
-                    double lon = hit.getDouble("point_lng");
+                    JSONObject point = hit.getJSONObject("point");
+                    double lat = point.getDouble("lat");
+                    double lon = point.getDouble("lng");
                     return new GeoPoint(lat, lon);
                 } else {
                     return null;
