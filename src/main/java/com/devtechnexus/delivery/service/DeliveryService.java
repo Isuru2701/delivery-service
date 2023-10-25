@@ -34,5 +34,9 @@ public class DeliveryService {
     public void deleteDelivery(int id) {
         repository.deleteById(id);
     }
+
+    public double getDistanceFromAPI(String address) {
+
+    }
 }
 
