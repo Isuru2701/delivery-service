@@ -50,10 +50,16 @@ public class DeliveryService {
         repository.deleteById(id);
     }
 
+    /**
+     * uses graphhopper's routing API.
+     * 
+     * @param address address of the destination
+     * @return distance (in km) to the destination from the store location
+     */
     public double getDistanceFromAPI(String address) {
 
         try {
-            //first get location latitude and longitude
+            //first get locations latitude and longitude
             GeoPoint source = getLocation(storeLocation);
             GeoPoint destination = getLocation(address);
 
