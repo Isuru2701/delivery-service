@@ -19,14 +19,9 @@ public class Delivery {
     @Column(name = "user_id")
     private int userId;
 
-    @Column(name = "user_name")
-    private int userName;
-
     @Column(name = "product_id")
     private int productId;
 
-    @Column(name = "price")
-    private float price;
 
     @Column(name = "quantity")
     private float quantity;
