@@ -14,7 +14,7 @@ public class DeliveryController {
     @Autowired
     private DeliveryService service;
 
-    @GetMapping
+    @GetMapping("/")
     public List<Delivery> getAll() {
         return service.getAll();
     }
@@ -24,12 +24,12 @@ public class DeliveryController {
         return service.getDeliveryByID(id);
     }
 
-    @PostMapping
+    @PostMapping("/")
     public Delivery createDelivery(@RequestBody Delivery delivery) {
         return service.createDelivery(delivery);
     }
 
-    @PutMapping
+    @PutMapping("/")
     public Delivery updateDelivery(@RequestBody Delivery delivery) {
         return service.updateDelivery(delivery);
     }
